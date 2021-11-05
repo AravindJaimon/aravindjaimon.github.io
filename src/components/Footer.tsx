@@ -1,43 +1,46 @@
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "gatsby"
 import React from "react"
 
 const Footer = () => {
   return (
-    <div className="max-w-7xl mx-auto p-20 mt-10 bg-lightblack rounded-xl">
-      <div className="grid grid-cols-2 xxs:grid-cols-1 lg:grid-cols-2">
-        <div>
-          <h1 className="text-white text-4xl text-bold">Circle</h1>
-          <p className="text-white text-sm mt-5 opacity-50">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries.
-          </p>
-          <h1 className="text-white text-lg mt-20 ">
-            © copyright{" "}
-            <a href="https://www.chetanverma.com/">chetanverma.com</a>
-          </h1>
-        </div>
-        <div className="place-self-end self-center xxs:hidden lg:block">
-          <ul className="text-xl font-poppins font-bold">
-            <li>
-              <Link to="/">Demos</Link>
-            </li>
-            <li>
-              <Link to="/">Company</Link>
-            </li>
-            <li>
-              <Link to="/">Products</Link>
-            </li>{" "}
-            <li>
-              <Link to="/">Portfolio</Link>
-            </li>
-            <li>
-              <Link to="/">Blog</Link>
-            </li>
-          </ul>
-        </div>
+    <div className="mx-auto p-16 mt-10 bg-lightblack rounded-xl flex justify-between align-middle">
+      <div className="mx-2 sm:mx-4 md:mx-8 lg:mx-10 text-xl sm:text-2xl md:text-3xl">
+        <Link to="https://www.instagram.com/aravindjaimon.me">
+          <FontAwesomeIcon icon={faInstagram} />
+        </Link>
+      </div>
+      <div className="mx-2 sm:mx-4 md:mx-8 lg:mx-10 text-xl sm:text-2xl md:text-3xl">
+        <Link to="https://twitter.com/aravindjaimonme">
+          <FontAwesomeIcon icon={faTwitter} />
+        </Link>
+      </div>
+      <div className="mx-2 sm:mx-4 md:mx-8 lg:mx-10 text-xl sm:text-2xl md:text-3xl">
+        <Link to="https://linkedin.com/in/aravindjaimon">
+          <FontAwesomeIcon icon={faLinkedin} />
+        </Link>
+      </div>
+      <div className="mx-2 sm:mx-4 md:mx-8 lg:mx-10 text-xl sm:text-2xl md:text-3xl">
+        <Link to="https://github.com/aravindjaimon">
+          <FontAwesomeIcon icon={faGithub} />
+        </Link>
+      </div>
+      <div className="mx-2 sm:mx-4 md:mx-8 lg:mx-10 text-xl sm:text-2xl md:text-3xl">
+        <a href="mailto:hi@aravindjaimon.me">
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
+      </div>
+      <div className="mx-2 sm:mx-4 md:mx-8 lg:mx-10 text-xl sm:text-2xl md:text-3xl">
+        <a href="tel:08281886068">
+          <FontAwesomeIcon icon={faPhone} />
+        </a>
       </div>
     </div>
   )

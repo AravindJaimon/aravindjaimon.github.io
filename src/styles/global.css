@@ -2,18 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.full-height-with-navbar {
+  height: calc(100vh - 200px);
+}
+
 @layer base {
   a {
     color: white;
   }
   body {
-    background-color: black;
-  }
-}
-
-@layer utilities {
-  .text-gradient {
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-color: #1e1f1c;
   }
 }
